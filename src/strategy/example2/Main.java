@@ -9,7 +9,15 @@ package strategy.example2;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("example2");
+
+        Context context;
+
+        context = new Context(new ConcreteStrategyA());
+        context.algorithm();
+
+        context = new Context(new ConcreteStrategyB());
+        context.algorithm();
+
     }
 
 }
