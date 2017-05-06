@@ -9,7 +9,24 @@ package strategy.example1;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Example1");
+
+        Duck mallardDuck = new MallardDuck();
+        mallardDuck.display();
+        mallardDuck.performFly();
+        mallardDuck.performQuack();
+
+        System.out.println("---");
+
+        Duck modelDuck = new ModelDuck();
+        modelDuck.display();
+        modelDuck.performFly();
+        modelDuck.performQuack();
+
+        System.out.println("Change quack behavior");
+
+        modelDuck.setQuackBehavior(new Squeak());
+        modelDuck.performQuack();
+
     }
 
 }
