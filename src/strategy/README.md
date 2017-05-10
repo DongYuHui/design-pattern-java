@@ -7,11 +7,11 @@
 
 ### UML ###
 
-![StrategeUML](./StrategyUML.jpg)
+![StrategeUML](./StrategyUML.jpg "Strategy UML")
 
 ### 时序图 ###
 
-![Strategy Sequence Diagram](./StrategySeq.jpg)
+![Strategy Sequence Diagram](./StrategySeq.jpg "Strategy Sequence Diagram")
 
 ## 示例 ##
 
