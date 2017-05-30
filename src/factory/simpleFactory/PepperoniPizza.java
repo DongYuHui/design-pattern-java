@@ -1,4 +1,4 @@
-package factory.simple;
+package factory.simpleFactory;
 
 /**
  * 披萨具体
@@ -8,10 +8,10 @@ package factory.simple;
  *
  * @author DongYuHui at <a href="dyh920827@gmail.com">dyh920827@gmail.com</a>
  */
-public class ClamPizza extends Pizza {
+public class PepperoniPizza extends Pizza {
 
-    public ClamPizza() {
-        type = "Clam";
+    public PepperoniPizza() {
+        type = "PepperoniPizza";
     }
 
 }

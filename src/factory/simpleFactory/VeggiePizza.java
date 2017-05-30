@@ -1,4 +1,4 @@
-package factory.simple;
+package factory.simpleFactory;
 
 /**
  * 披萨具体

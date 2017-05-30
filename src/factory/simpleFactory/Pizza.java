@@ -1,4 +1,4 @@
-package factory.simple;
+package factory.simpleFactory;
 
 /**
  * 工厂的产品，此例中为披萨

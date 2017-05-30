@@ -1,4 +1,4 @@
-package factory.simple;
+package factory.simpleFactory;
 
 /**
  * 披萨店，用于生成订单生产披萨

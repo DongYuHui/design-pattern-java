@@ -1,4 +1,4 @@
-package factory.method;
+package factory.methodFactory;
 
 /**
  * 工厂方法模式示例

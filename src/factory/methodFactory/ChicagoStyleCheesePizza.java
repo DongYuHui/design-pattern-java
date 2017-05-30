@@ -1,4 +1,4 @@
-package factory.method;
+package factory.methodFactory;
 
 /**
  * 芝加哥风味芝士披萨

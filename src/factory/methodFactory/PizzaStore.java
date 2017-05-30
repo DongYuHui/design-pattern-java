@@ -1,4 +1,4 @@
-package factory.method;
+package factory.methodFactory;
 
 /**
  * 披萨店，抽象出来，这样每种风格的披萨店直接靠子类实例化，后续扩展也只需要直接继承该抽象类即可
