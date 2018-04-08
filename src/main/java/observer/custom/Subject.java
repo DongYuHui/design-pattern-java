@@ -1,4 +1,4 @@
-package observer.example1;
+package observer.custom;
 
 /**
  * 主题接口，用于被订阅
@@ -15,18 +15,18 @@ public interface Subject {
      *
      * @param observer 观察者
      */
-    public void registerObserver(Observer observer);
+    void registerObserver(Observer observer);
 
     /**
      * 注销观察者
      *
      * @param observer 观察者
      */
-    public void removeObserver(Observer observer);
+    void removeObserver(Observer observer);
 
     /**
      * 更新所有观察者
      */
-    public void updateAll();
+    void updateAll();
 
 }

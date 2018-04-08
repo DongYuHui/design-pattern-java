@@ -1,4 +1,4 @@
-package observer.example2;
+package observer.custom;
 
 /**
  * 该示例中的特定
@@ -13,6 +13,6 @@ public interface DisplayElement {
     /**
      * 显示当前观察者的信息
      */
-    public void display();
+    void display();
 
 }

@@ -1,9 +1,9 @@
-package observer.example2;
+package observer.java;
 
 import java.util.Observable;
 
 /**
- * FixMe
+ * 气象主题
  * ---
  * All Rights Reserved by Author
  * Created on 2017/05/14 16:23

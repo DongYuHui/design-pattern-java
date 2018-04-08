@@ -1,4 +1,4 @@
-package observer.example2;
+package observer.java;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -7,16 +7,16 @@ import java.util.Observer;
  * 观察者
  * ---
  * All Rights Reserved by Author
- * Created on 2017/05/14 16:29
+ * Created on 2017/05/14 16:26
  *
  * @author DongYuHui at <a href="dyh920827@gmail.com">dyh920827@gmail.com</a>
  */
-public class StatisticsConditionsDisplay implements Observer, DisplayElement {
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
     private float mTemperature;
-    private float mPressure;
+    private float mHumidity;
 
-    public StatisticsConditionsDisplay(Observable observable) {
+    public CurrentConditionsDisplay(Observable observable) {
         observable.addObserver(this);
     }
 
@@ -25,14 +25,14 @@ public class StatisticsConditionsDisplay implements Observer, DisplayElement {
         if (o instanceof WeatherData) {
             WeatherData data = (WeatherData) o;
             mTemperature = data.getTemperature();
-            mPressure = data.getPressure();
+            mHumidity = data.getHumidity();
             display();
         }
     }
 
     @Override
     public void display() {
-        System.out.println("StatisticsConditionsDisplay: " + "Temperature " + mTemperature + ", Pressure " + mPressure);
+        System.out.println("CurrentConditionsDisplay: " + "Temperature " + mTemperature + ", Humidity " + mHumidity);
     }
 
 }

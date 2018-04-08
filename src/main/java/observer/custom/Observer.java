@@ -1,4 +1,4 @@
-package observer.example1;
+package observer.custom;
 
 /**
  * 观察者需要实现的接口
@@ -17,6 +17,6 @@ public interface Observer {
      * @param humidity 湿度
      * @param pressure 气压
      */
-    public void update(float temp, float humidity, float pressure);
+    void update(float temp, float humidity, float pressure);
 
 }

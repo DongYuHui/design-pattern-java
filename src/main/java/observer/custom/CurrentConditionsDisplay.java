@@ -1,4 +1,4 @@
-package observer.example1;
+package observer.custom;
 
 /**
  * 观察者
