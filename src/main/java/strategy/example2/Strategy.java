@@ -9,6 +9,6 @@ package strategy.example2;
  */
 public interface Strategy {
 
-    public void strategy();
+    void strategy();
 
 }

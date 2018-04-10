@@ -10,6 +10,9 @@ package strategy.example1;
  */
 public interface QuackBehavior {
 
-    public void quack();
+    /**
+     * 定义叫声的行为
+     */
+    void quack();
 
 }

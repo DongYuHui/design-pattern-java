@@ -6,7 +6,7 @@
 
 ## 章节 ##
 
-1. [策略模式](./src/main/java/strategy "策略模式")
+1. [策略模式](./src/main/resources/strategy.md "策略模式")
 
 策略模式指对象有某个行为，但是在不同的场景中，该行为有不同的实现算法。
 

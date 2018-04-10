@@ -10,11 +10,10 @@ package strategy.example1;
  */
 public abstract class Duck {
 
-    protected FlyBehavior mFlyBehavior;
-    protected QuackBehavior mQuackBehavior;
+    FlyBehavior mFlyBehavior;
+    QuackBehavior mQuackBehavior;
 
-    public Duck() {
-
+    Duck() {
     }
 
     public abstract void display();

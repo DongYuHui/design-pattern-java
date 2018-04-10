@@ -10,6 +10,9 @@ package strategy.example1;
  */
 public interface FlyBehavior {
 
-    public void fly();
+    /**
+     * 定义飞的行为
+     */
+    void fly();
 
 }
