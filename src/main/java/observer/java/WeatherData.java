@@ -10,6 +10,8 @@ import java.util.Observable;
  *
  * @author DongYuHui at <a href="dyh920827@gmail.com">dyh920827@gmail.com</a>
  */
+
+@Deprecated
 public class WeatherData extends Observable {
 
     private float mTemperature;

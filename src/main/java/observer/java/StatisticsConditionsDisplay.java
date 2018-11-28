@@ -11,6 +11,8 @@ import java.util.Observer;
  *
  * @author DongYuHui at <a href="dyh920827@gmail.com">dyh920827@gmail.com</a>
  */
+
+@Deprecated
 public class StatisticsConditionsDisplay implements Observer, DisplayElement {
 
     private float mTemperature;
