@@ -1,16 +1,18 @@
-package decorator;
+import decorator.*;
+import org.junit.Test;
 
 /**
- * Example
- * ---
+ * 装饰器模式测试
+ * - - -
+ * Created on 2018/11/28 14:51
  * All Rights Reserved by Author
- * Created on 2017/05/16 21:28
  *
- * @author DongYuHui at <a href="dyh920827@gmail.com">dyh920827@gmail.com</a>
+ * @author DongYuHui at <a href="mailto:dyh920827@gmail.com">dyh920827@gmail.com</a>
  */
-public class Main {
+public class DecoratorTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void testDecorator() {
 
         Beverage beverage = new Espresso();
         System.out.println(beverage.getDescription() + " $" + beverage.cost());

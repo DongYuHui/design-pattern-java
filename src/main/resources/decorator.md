@@ -5,7 +5,7 @@
 
 ## 图例 ##
 
-![装饰者模式](./DecoratorUML.png "装饰者模式")
+![装饰者模式](DecoratorUML.png "装饰者模式")
 
 ## 示例 ##
 
