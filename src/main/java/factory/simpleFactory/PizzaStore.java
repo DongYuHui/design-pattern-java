@@ -8,7 +8,7 @@ package factory.simpleFactory;
  *
  * @author DongYuHui at <a href="dyh920827@gmail.com">dyh920827@gmail.com</a>
  */
-public class PizzaStore {
+public class  PizzaStore {
 
     private SimplePizzaFactory mFactory;
 

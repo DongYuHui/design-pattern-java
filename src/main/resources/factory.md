@@ -9,25 +9,25 @@
 
 ### 图例 ###
 
-![UML](./SimpleFactoryUML.jpg "SimpleFactoryUML")
+![UML](SimpleFactoryUML.jpg "SimpleFactoryUML")
 
-![Sequence](./SimpleFactorySeq.jpg "SimpleFactorySequence")
+![Sequence](SimpleFactorySeq.jpg "SimpleFactorySequence")
 
 ## 工厂方法模式 ##
 
 ### 图例 ###
 
-![UML](./FactoryMethodUML.jpg "factoryMethodUML")
+![UML](FactoryMethodUML.jpg "factoryMethodUML")
 
-![Sequence](./FactoryMethodSeq.jpg "FactoryMethodSequence")
+![Sequence](FactoryMethodSeq.jpg "FactoryMethodSequence")
 
 ## 抽象工厂模式 ##
 
 ### 图例 ###
 
-![UML](./AbstractFactoryUML.jpg "AbstractFactoryUML")
+![UML](AbstractFactoryUML.jpg "AbstractFactoryUML")
 
-![Sequence](./AbstractFactorySeq.jpg "AbstractFactorySequence")
+![Sequence](AbstractFactorySeq.jpg "AbstractFactorySequence")
 
 ## 三者的小结与区别 ##
 
