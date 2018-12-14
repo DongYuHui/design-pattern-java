@@ -1,4 +1,7 @@
+import observer.java.CustomSubscriber;
 import org.junit.Test;
+
+import java.util.concurrent.SubmissionPublisher;
 
 /**
  * 观察者模式测试
@@ -26,20 +29,24 @@ public class ObserverTest {
 
     }
 
+    /**
+     * JDK 原有的 Observer，Observable 已经被标记为 @Deprecated
+     * 从 JDK9 开始引入 Flow 来实现观察者模式，可以发现这与 RxJava 十分相似
+     */
     @Test
     public void testObserverJava() {
-
-        observer.java.WeatherData weatherData = new observer.java.WeatherData();
-
-        observer.java.CurrentConditionsDisplay currentConditionsDisplay = new observer.java.CurrentConditionsDisplay(weatherData);
-        observer.java.StatisticsConditionsDisplay statisticsConditionsDisplay = new observer.java.StatisticsConditionsDisplay(weatherData);
-
-        weatherData.setMeasurements(10F, 30F, 50F);
-        weatherData.deleteObserver(statisticsConditionsDisplay);
-        weatherData.setMeasurements(20F, 40F, 60F);
-        weatherData.deleteObserver(currentConditionsDisplay);
-        weatherData.setMeasurements(3F, 50F, 23F);
-
+        SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
+        publisher.subscribe(new CustomSubscriber("one"));
+        for (int i = 0; i < 10; i++) {
+            publisher.submit("number " + i);
+        }
+        publisher.close();
+        // 主线程睡眠 1 秒，等待订阅者的线程结束，否则订阅者线程还没有任何输出就被中止
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }
